@@ -99,3 +99,40 @@
         text-align: justify;
     }
 }
+
+@media (max-width: 900px) {
+  .contact-wrap { 
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
+      gap: 40px; 
+  }
+  .contact-hero { 
+      width: 100%; 
+      font-size: 42px; 
+      margin-top: 0; 
+  }
+  .form-card { 
+      width: 100%; 
+      max-width: 450px; 
+  }
+}
+
+@media (max-width: 900px) {
+    .contact-text-div {
+        width: 100%;
+        align-items: center; /* Center items */
+        text-align: center;  /* Center text */
+        margin-bottom: 30px;
+    }
+    .contact-subtitle, .contact-title {
+        text-align: center !important;
+    }
+}
+
+/* On mobile, center it again */
+@media (max-width: 900px) {
+    .contact-title {
+        text-align: center;
+    }
+}

@@ -22,7 +22,9 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Angeline Nicole</div>
+        <div class="logo">
+            <img src="./assets/usb.png" alt="USB logo">
+        </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -247,6 +249,16 @@
                 <div class="article-container-project">
                    <!-- <img src="./assets/project-2.png" alt="Project 2" class="project-img"/> -->
                 </div>
+                <h2 class="experince-sub-title project-title">Active Directory Exploitation & Lateral Movement</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/lynfaina/Active-Directory-Pentesting-Lab', '_blank')">GitHub</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/lynfaina/Active-Directory-Pentesting-Lab', '_blank')">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container-project">
+                   <!-- <img src="./assets/project-2.png" alt="Project 2" class="project-img"/> -->
+                </div>
                 <h2 class="experince-sub-title project-title">Network & Web Application Penetration Test</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/lynfaina/M2-Vulnerability-Research', '_blank')">GitHub</button>
@@ -286,19 +298,30 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <!-- <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon email-icon"/>
-                <p><a href="mailto:gelinefaina@gmail.com">gelinefaina@gmail.com</a></p>
-            </div> -->
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/lynfaina/" target="_blank">LinkedIn</a></p>
-            </div>
+    <!-- CONTACT / FORM SECTION -->
+    <section id="contact" class="contact-section">
+    <div class="contact-wrap">
+        <div class="cotact-text-div">
+            <p class="contact-subtitle">Get in Touch</p>
+            <h1 class="title contact-title">Kindly fill this up for inquiries.</h1>
         </div>
+        <aside class="form-card">
+        <form id="contact-form" class="contact-form" autocomplete="on">
+            <label for="name">First Name</label>
+            <input id="name" name="name" type="text" pattern="[A-Za-z\s]+" required>
+            <label for="surname">Last Name</label>
+            <input id="surname" name="surname" type="text" pattern="[A-Za-z\s]+" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Submit</button>
+            <div id="contact-status" class="contact-status" role="status" aria-live="polite" hidden>
+            </div>
+        </form>
+        </aside>
+    </div>
+    <hr class="custom-line">
     </section>
     <footer>
         <nav>
@@ -314,5 +337,6 @@
         <p>Copyright &#169; 2025 Angeline Nicole. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </body>
 </html>
